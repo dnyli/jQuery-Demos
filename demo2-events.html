@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+   <link rel="stylesheet" href="css/demo2.css"/>
+    </head>
+    <body>
+     <dl>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+        <dt>What is your favior color</dt>
+        <dd>It is Red...</dd>
+     </dl>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+
+     (function(){
+         //hide all the dd child from the 4th to the end, and set the first one as default.
+         $('dd').filter(':nth-child(n+4)').addClass('hide');
+         // when the mouse hover, the next of current element will slideDown(show) in 200mm, and others slideup(hide). 
+         $('dl').on('mouseenter', 'dt', function(){
+             $(this)
+              .next()
+               .slideDown(200)  
+                .siblings('dd')
+                 .slideUp(200);
+   //         
+         })
+     })();
+    </script> 
+    </body>
+</html>

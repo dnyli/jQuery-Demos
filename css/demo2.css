@@ -1,0 +1,33 @@
+body{
+ width: 500px;
+ margin: auto;
+}
+
+dl{
+ text-align: center;
+ margin: 30px;
+
+}
+
+dt{
+ cursor: pointer;
+ font-weight: bold;
+ background: #999;
+ font-size: 24px;
+ padding: 5px;
+ line-height: 2em;
+ border-top: 1px solid #FFF;
+ border-bottom: 1px solid #666;
+}
+
+dt:first-child {border-top: none;}
+dt:nth-last-child(2) {border-bottom: none;}
+
+dd{ 
+ font-size: 18px;
+ padding: 5px;
+ background: yellow;
+ -webkit-margin-start: 0;
+}
+
+.hide {display: none;}

@@ -1,0 +1,21 @@
+.why{
+    color: orange;
+}
+
+p{
+    
+}
+
+.mybtn{
+    
+}
+
+ul li{
+ list-style-type: none;
+ /*display: none;*/
+}
+
+.dl-prev, .dl-nex{
+ cursor: pointer;
+ box-shadow: 1px 1px 10px #C2B3B3; 
+}
